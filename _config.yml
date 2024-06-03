@@ -47,3 +47,11 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+# _config.yml
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
