@@ -8,6 +8,16 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
 end
 
+gem 'jekyll-toc'
+
+group :jekyll_plugins do
+  gem 'jekyll-google_search_console_verification_file'
+end
+
+group :jekyll_plugins do
+  gem 'jekyll-workbox-plugin'
+end
+
 group :jekyll_plugins do
   gem "jekyll-youtube"
 end
@@ -19,5 +29,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jekyll-seo-tag'
+gem 'jekyll-auth'
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
