@@ -12,14 +12,35 @@ facebook_username:  StartBootstrap
 instagram_username:  
 linkedin_username:
 
-# Add your google-analytics ID here to activate google analytics
+# Add your google-analytics ID here 
+google_search_console:
+  verification_file_code: 47733b3288357e4
+jekyll_auth:
+  ssl: true
+#to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
-
+workbox:
+  sw_src_filepath: sw.js # Optional
+  sw_dest_filename: sw.js # Optional
+  precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+    - "about.html": # This entry aliases about/ and contact/ to about.html
+        - about/
+        - contact/
+  precache_glob_ignores: # Optional
+    - "fonts/**/*"
 # Build settings
 markdown:           kramdown
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:
+  - jekyll-google_search_console_verification_file
+  - jekyll-workbox-plugin
+  - jekyll-toc
+  - jekyll-loading-lazy
   - jekyll-youtube
   - jekyll-pdf-embed
   - jekyll-feed
