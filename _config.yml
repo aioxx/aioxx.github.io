@@ -10,9 +10,9 @@ github_username: cyberxbd
 facebook_username: cyberxbd
 instagram_username: cyberxbd
 linkedin_username: cyberxbd
-google_search_console:
-  verification_file_code: xxxxx
+
 google_analytics: UA-XXXXXXXXX-X
+
 markdown: kramdown
 paginate: 7
 paginate_path: /posts/page:num/
@@ -25,10 +25,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-google_search_console_verification_file
+  - jekyll-gist
 
-jekyll_auth:
-  ssl: true
 workbox:
   sw_src_filepath: sw.js
   sw_dest_filename: sw.js
