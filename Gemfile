@@ -8,8 +8,6 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
 end
 
-gem 'jekyll-toc'
-
 group :jekyll_plugins do
   gem 'jekyll-google_search_console_verification_file'
 end
