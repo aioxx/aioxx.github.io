@@ -1,43 +1,22 @@
-title:              Aioxx Blog
-email:              hello@sobkiso.xyz
-description:        A Blog by Nullbite
-author:             Nullbite
-baseurl:            "/"
-url:                "https://aioxx.github.io"
-
-# Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
-
-# Add your google-analytics ID here 
+---
+title: Aioxx Blog
+email: hello@sobkiso.xyz
+description: A Blog by Nullbite
+author: Nullbite
+baseurl: /
+url: https://aioxx.github.io
+twitter_username: cyberxbd
+github_username: cyberxbd
+facebook_username: cyberxbd
+instagram_username: cyberxbd
+linkedin_username: cyberxbd
 google_search_console:
-  verification_file_code: 47733b3288357e4
-jekyll_auth:
-  ssl: true
-#to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
-workbox:
-  sw_src_filepath: sw.js # Optional
-  sw_dest_filename: sw.js # Optional
-  precache_recent_posts_num: 5 # Optional
-  precache_glob_directory: / # Optional
-  precache_glob_patterns: # Optional
-    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
-    - index.html
-    - "about.html": # This entry aliases about/ and contact/ to about.html
-        - about/
-        - contact/
-  precache_glob_ignores: # Optional
-    - "fonts/**/*"
-# Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
+  verification_file_code: xxxxx
+google_analytics: UA-XXXXXXXXX-X
+markdown: kramdown
+paginate: 7
+paginate_path: /posts/page:num/
 plugins:
-  - jekyll-google_search_console_verification_file
   - jekyll-workbox-plugin
   - jekyll-toc
   - jekyll-loading-lazy
@@ -47,11 +26,24 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
-
-
-# _config.yml
+  - jekyll-google_search_console_verification_file
 defaults:
   - scope:
       path: ""
     values:
       toc: true
+jekyll_auth:
+  ssl: true
+workbox:
+  sw_src_filepath: sw.js
+  sw_dest_filename: sw.js
+  precache_recent_posts_num: 7
+  precache_glob_directory: /
+  precache_glob_patterns:
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+    - about.html
+    - about
+    - contact
+  precache_glob_ignores:
+    - fonts/**/*
