@@ -18,7 +18,6 @@ paginate: 7
 paginate_path: /posts/page:num/
 plugins:
   - jekyll-workbox-plugin
-  - jekyll-toc
   - jekyll-loading-lazy
   - jekyll-youtube
   - jekyll-pdf-embed
@@ -27,11 +26,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-google_search_console_verification_file
-defaults:
-  - scope:
-      path: ""
-    values:
-      toc: true
+
 jekyll_auth:
   ssl: true
 workbox:
