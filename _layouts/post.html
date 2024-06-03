@@ -31,7 +31,14 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-       {{ content | toc }}
+       <div>
+  <div id="table-of-contents">
+    {% toc %}
+  </div>
+  <div id="markdown-content">
+    {{ content }}
+  </div>
+</div>
         {{ content }}
 
         <hr>
@@ -47,8 +54,6 @@ layout: default
           {% endif %}
          <br/>
          <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
         </div>
 
       </div>
