@@ -41,4 +41,7 @@ workbox:
   precache_glob_ignores:
     - fonts/**/*
 
-
+algolia:
+   application_id: 38F87HDEDQ
+   index_name: aioxx
+   search_only_api_key: bd0c54864529d4b89fac5868be323e88
