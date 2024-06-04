@@ -28,10 +28,8 @@ group :jekyll_plugins do
   gem "jekyll-pdf-embed"
 end
 
-# Gemfile
-
 group :jekyll_plugins do
-  gem 'jekyll-algolia', '~> 1.0'
+  gem 'jekyll-algolia'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
