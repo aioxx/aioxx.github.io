@@ -46,3 +46,22 @@ function escapeHtml(str) {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
 }
+const searchClient = algoliasearch('YWHH5RK4RH', '1d32fa6f567c6458f577102f2fd36310');
+
+const search = instantsearch({
+  indexName: 'demo_blog',
+  searchClient,
+});
+
+search.addWidgets([
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
+  }),
+
+  instantsearch.widgets.hits({
+    container: '#hits',
+  })
+]);
+
+search.start();
+
