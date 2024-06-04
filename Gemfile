@@ -8,6 +8,10 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
 end
 
+group :development do
+  gem 'rails_real_favicon'
+end
+
 group :jekyll_plugins do
   gem 'jekyll-google_search_console_verification_file'
 end
