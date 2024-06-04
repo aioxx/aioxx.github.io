@@ -41,5 +41,4 @@ workbox:
   precache_glob_ignores:
     - fonts/**/*
 
-favicon:
-  source: network-security.svg
+
