@@ -12,7 +12,7 @@ instagram_username: cyberxbd
 linkedin_username: cyberxbd
 
 google_analytics: G-YYJHZGS99C
-
+disqus_shortname: sobkiso
 markdown: kramdown
 paginate: 7
 paginate_path: /posts/page:num/
